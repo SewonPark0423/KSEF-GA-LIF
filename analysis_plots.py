@@ -1,17 +1,4 @@
-"""Generate analysis plots for NSGA-II + LIF integration.
 
-Produces the following figures (saved under `figs/`):
-- `pareto_front.png`: Pareto front scatter (penalty vs S_final)
-- `kprune_vs_Sfinal.png`: k_prune vs S_final scatter for Pareto set
-- `lif_timeseries_example.png`: example time-series of LIF spikes (A_history) and Microglia activity S(t)
-- `params_boxplot_dev_vs_aging.png`: boxplots of parameters across environments
-
-Usage (PowerShell):
-    python analysis_plots.py
-
-The script tries to reuse `nsga2_driver` and `run_brian_sim` from `ga_optimizer.py`.
-If DEAP or Brian2 are not available the fallback in `ga_optimizer` will be used.
-"""
 import os
 import math
 import numpy as np
