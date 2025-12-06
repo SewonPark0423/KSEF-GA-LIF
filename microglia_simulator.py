@@ -64,7 +64,8 @@ def simulate_microglia(phenotype, env, E=INFLAMMATION_LEVEL, T=TIME_STEPS):
         'D_final': float(D),
         'overpruned_time': int(overpruned_time),
         'chronic_A_time': int(chronic_A_time),
-        'T': int(T)
+        'T': int(T),
+        'LIF_Input_History': np.array(A_history)
     }
 
     return stats
